@@ -94,3 +94,34 @@ padding: 1em;
   padding:0em !important ;
   margin:0em !important ;
 }
+/* Animaciones */
+img{
+  position: relative;
+  top:0em;
+  transform: scale(1);
+  animation: test 2s ease;
+
+}
+h1{
+  position: relative;
+  left:0em;
+  animation: left-ani 1s ease;
+
+}
+p{
+  position: relative;
+  left:0em;
+  animation: left-ani 1s ease ;
+}
+
+@keyframes test {
+  0%   {top:-40em; transform:  scale(0,0);}
+  30% {top: -40em; transform:  scale(0,0);}
+  100% {top:0em;  transform:  scale(1);}
+}
+
+@keyframes left-ani {
+  0%   {left:-15em;}
+  100% {left:0em;}
+}
+

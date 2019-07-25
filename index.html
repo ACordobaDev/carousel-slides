@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>casorusel Bootstrap - By ACordobaDev</title>
+  <title>Casorusel Bootstrap - By ACordobaDev</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- inicio Slider -->
 
-<div id="exo-carousel" class="carousel slide" data-ride="carousel">
+<div id="exo-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
 <ol class="carousel-indicators"><!-- inicio indicadores -->
 <li data-target="#exo-carousel" data-slide-to="0" class="active"></li>
 <li data-target="#exo-carousel" data-slide-to="1"></li>
@@ -20,7 +20,7 @@
 <div class="carousel-inner"> <!-- Abre contenido casorusel slider -->
 
     
-  <div class="carousel-item active"><!-- Slider 1-->
+  <div class="carousel-item active" role="listbox"><!-- Slider 1-->
         <div class="bg-slider"><!--background Slider 1-->
           <div class="container-fluid " >
             <div class="row row-slider align-items-center justify-content-center">
@@ -28,7 +28,7 @@
                     <div class=""> <p class="ac_subtittle">Slider  #1</p></div>
                     <h1 class="tittle-slider">Centrado 2 Col</h1>
                     <p>Centramos contenido en horizontal y vertical sobre el tamaño del div Slider, ajustable el tamaño con col de bootstrap. </p>
-                     <button type="button" class="btn btn-outline-light">Button</button>
+                   
                   </div>
                  <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
                   <img class="d-block w-100" src="https://static.platzi.com/media/landing-projects/Proyecto-DisenoInterfacesyUX2.png" alt="First slide" class="img-fluid">
@@ -38,7 +38,7 @@
         </div>
   </div><!--Fin Slider 1-->
   
-  <div class="carousel-item"><!--Slider 2-->
+  <div class="carousel-item" role="listbox" ><!--Slider 2-->
         <div class="bg-slider-2"><!--background Slider-->
           <div class="container-fluid " >
             <div class="row row-slider align-items-center justify-content-center">
@@ -46,7 +46,7 @@
                     <div class=""> <p class="ac_subtittle">Slider  #2</p></div>
                     <h1 class="tittle-slider">Carousel a Slider</h1>
                     <p>Con el componente carousel de bootstrap 4.1, se genera un slider totalmente personalizado y facil de entender.</p>
-                  <button type="button" class="btn btn-outline-light">Button</button>
+                
                   </div>
                  <div class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4">
                   <img class="d-block w-100" src="https://getbootstrap.com/docs/4.1/assets/img/bootstrap-stack.png" alt="First slide" class="img-fluid">
@@ -56,7 +56,7 @@
         </div>
   </div><!--Fin Slider 2-->
 
-    <div class="carousel-item"><!-- Slider 3-->
+    <div class="carousel-item" role="listbox" ><!-- Slider 3-->
         <div class="bg-slider-3"><!--background Slider-->
           <div class="container-fluid " >
             <div class="row row-slider align-items-center justify-content-end">
@@ -64,10 +64,10 @@
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                    
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-center">
-                    <p class="slider-text-dark">Slider  #3</p>
-                    <h1 class="color-primario">Imagen a Derecha</h1>
-                    <p class="slider-text-dark">Mantiene el texto centrado en col-6  y alinea la imagen a la derecha sin dejar bordes en blanco.</p>
-                     <button type="button" class="btn btn-primary">Button</button>
+                    <p class="ac_subtittle">Slider  #3</p>
+                    <h1 class="tittle-slider">Imagen a Derecha</h1>
+                    <p >Mantiene el texto centrado en col-6  y alinea la imagen a la derecha sin dejar bordes en blanco.</p>
+                  
                    </div>
                    
               </div>
@@ -99,10 +99,8 @@
 </div>
 
 </footer>
-  
-
-  
-  
+  <script>
+  </script>
   
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script><!-- Jquery-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><!-- Bootstrap-->
