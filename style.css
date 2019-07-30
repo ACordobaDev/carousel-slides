@@ -1,42 +1,106 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,700i,800i,900i&display=swap');
 :root {
   --color-primario: #0072D2;
-  --color-segundo: #00B6C3;
-  --color-Sg-dark: #0092A1;
-  --color-Sg-white: #ffffff;
-  --color-degrade: linear-gradient(to bottom, rgba(0,116,210,1) 0%, rgba(0,116,210,1) 49%, rgba(0,182,195,1) 100%);
-  --color-degrade-2: #563d7c;
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --color-amarillo: #ffcc00;
   --slider-size: 800px;
+  --font: Montserrat, sans-serif;
   
 }
+/* CSS Textos */
+h1{
+  font-family: var(--font);
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+  font-size: 5em;
+  color: var(--color-negro);
+  
+}
+h2{
+  font-family: var(--font);
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  font-size: 3em;
+  color: var(--color-negro);
+  
+}
+#racing{
+  background: var(--color-negro);
+  border-radius: 5px;
+  padding: 1em 2em;
+  line-height: 0;
+  width: fit-content;
+  height: auto;
+  transform: skew(-20deg, 0);
+  text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+#racing p{
+  font-family: var(--font);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin: 0em;
+  color: var(--color-blanco);
+  
+}
+#dominar{
+  background: var(--color-amarillo);
+  padding: 1em 2em;
+  line-height: 0;
+  width: fit-content;
+  height: auto;
+  transform: skew(-20deg, 0);
+  text-align: center;
+margin-left: auto;
+margin-right: auto;
+
+}
+#dominar h2{
+  font-size: 1.3em;
+  margin: 0em;
+}
+
+
+/* FIN CSS Textos */
+
+/*fondos de los slider */
 .bg-slider{
-  background: var(--color-degrade);
+  background-image: url("image/bg-apache.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   height: var(--slider-size);
 }
 .bg-slider-2{
-  background: var(--color-degrade-2);
+  background-image: url("image/bg-dominar.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   height: var(--slider-size);
 }
 .bg-slider-3{
-  background: #2B2B2B;
+  background-image: url("image/bg-z1000.jpg");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
   color: var(--color-primario);
   height: var(--slider-size);
 }
-.tittle-slider{
-  color:#FFF;
+.row-slider{
+  height: var(--slider-size);
+}
+/* Fin fondos de los slider */
 }
 .col-center{
       float: none;
     margin: 0 auto;
-}
-
-.ac_subtittle{
-  width:auto !important;
-  overflow:hidden;
-  font-family: 'Roboto';
-  color: #ffffff;
-  font-size: 75%;
-  margin:0em;
 }
 
 .row-slider p{
@@ -46,6 +110,7 @@
     font-style: normal;
 
 }
+/* Footer */
 .derechos {
   background: var(--color-primario);
   text-align:center;
@@ -56,20 +121,19 @@ padding: 1em;
   margin:0em;
 
 }
+/* FIN Footer */
 
-
-
-.row-slider{
-  height: var(--slider-size);
-}
-
+/* Responsive */
 @media screen and (max-width:768px) {
   .row-slider {
    height: 100vh;
+   display: flex;
+   align-content: center !important;
     text-align: center;
   }
 .bg-slider {
     height: 100vh;
+    display: flex;
   }
   .bg-slider-2 {
     height: 100vh;
@@ -77,23 +141,24 @@ padding: 1em;
   .bg-slider-3 {
     height: 100vh;
   }
+  h1{
+    font-size: 2em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  .invertir{
+    flex-wrap: wrap-reverse;
+  }
 }
+/* FIN Responsive */
 
-.color-primario{
-  color: var(--color-primario) !important;
-}
-
-.slider-text-dark{
- 
- color: #2B2B2B !important ;
-  font-family: 'Roboto';
-  font-weight:00;
-}
 
 .no-espacio{
   padding:0em !important ;
   margin:0em !important ;
 }
+
 /* Animaciones */
 img{
   position: relative;
@@ -124,4 +189,4 @@ p{
   0%   {left:-15em;}
   100% {left:0em;}
 }
-
+/* FIN Animaciones */
