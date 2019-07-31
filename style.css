@@ -31,7 +31,7 @@ h2{
   background: var(--color-negro);
   border-radius: 5px;
   padding: 1em 2em;
-  line-height: 0;
+
   width: fit-content;
   height: auto;
   transform: skew(-20deg, 0);
@@ -66,6 +66,9 @@ margin-right: auto;
   font-size: 1.3em;
   margin: 0em;
 }
+.z1000 {
+  color: #ffffff !important;
+}
 
 
 /* FIN CSS Textos */
@@ -97,7 +100,7 @@ margin-right: auto;
   height: var(--slider-size);
 }
 /* Fin fondos de los slider */
-}
+
 .col-center{
       float: none;
     margin: 0 auto;
@@ -142,13 +145,19 @@ padding: 1em;
     height: 100vh;
   }
   h1{
-    font-size: 2em;
+    font-size: 3em;
   }
   h2{
     font-size: 1.5em;
   }
   .invertir{
     flex-wrap: wrap-reverse;
+  }
+  p{
+    font-size: 0.8em;
+  }
+  #dominar h2{
+    font-size: 0.8em;
   }
 }
 /* FIN Responsive */
@@ -160,33 +169,73 @@ padding: 1em;
 }
 
 /* Animaciones */
-img{
+.bg-slider img{
   position: relative;
-  top:0em;
+ left:0em;
   transform: scale(1);
-  animation: test 2s ease;
+  animation: Img-Izq 2s ease ;
 
 }
-h1{
+.bg-slider-2 img{
+  position: relative;
+  right:0em;
+  transform: scale(1);
+  animation: Img-Dcha 2s ease !important;
+
+}
+.bg-slider-3 img{
+  position: relative;
+ left:0em;
+  transform: scale(1);
+  animation: Img-Izq 2s ease ;
+
+}
+.MovDcha{
+  position: relative;
+  right:0em;
+  animation: MovDcha 1s ease;
+
+}
+.MovIzq{
   position: relative;
   left:0em;
-  animation: left-ani 1s ease;
+  animation: MovIzq 1s ease;
 
 }
-p{
+.MovBajo{
   position: relative;
-  left:0em;
-  animation: left-ani 1s ease ;
+  bottom:0em;
+  animation: MovBajo 1s ease;
+
 }
 
-@keyframes test {
-  0%   {top:-40em; transform:  scale(0,0);}
-  30% {top: -40em; transform:  scale(0,0);}
-  100% {top:0em;  transform:  scale(1);}
+
+@keyframes Img-Izq {
+  0%   {left:-40em; transform:  scale(0,0);}
+  15% {left: -40em; transform:  scale(0,0);}
+  100% {left:0em;  transform:  scale(1);}
 }
 
-@keyframes left-ani {
-  0%   {left:-15em;}
-  100% {left:0em;}
+@keyframes Img-Dcha {
+  0%   {right:-40em; transform:  scale(0,0);}
+  15% {right: -40em; transform:  scale(0,0);}
+  100% {right:0em;  transform:  scale(1);}
+}
+
+@keyframes MovDcha {
+  0%   {right:-40em; transform:  scale(0,0);}
+  15% {right: -40em; transform:  scale(0,0);}
+  100% {right:0em;  transform:  scale(1);}
+}
+
+@keyframes MovIzq {
+  0%   {left:-40em; transform:  scale(0,0);}
+  15% {left: -40em; transform:  scale(0,0);}
+  100% {left:0em;  transform:  scale(1);}
+}
+@keyframes MovBajo {
+  0%   {bottom:-40em; transform:  scale(0,0) skew(-20deg, 0);}
+  60% {bottom: -40em; transform:  scale(0,0) skew(-20deg, 0);}
+  100% {bottom:0em;  transform:  scale(1) skew(-20deg, 0);}
 }
 /* FIN Animaciones */
